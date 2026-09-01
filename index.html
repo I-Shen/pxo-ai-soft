@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PxO AI Soft - Next-Gen Autonomous AI Software House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #030712;
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.4);
+      --accent: #a855f7;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: rgba(56, 189, 248, 0.2);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    .hero-glow {
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(168, 85, 247, 0.12) 50%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      backdrop-filter: blur(16px);
+      background: rgba(3, 7, 18, 0.75);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-weight: 900;
+      font-size: 1.4rem;
+      background: linear-gradient(135deg, #38bdf8, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .cta-btn {
+      background: linear-gradient(135deg, #0284c7, #9333ea);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 20px var(--primary-glow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(168, 85, 247, 0.6);
+    }
+    header.hero {
+      text-align: center;
+      padding: 100px 8% 60px;
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--border);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      margin-bottom: 24px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #38bdf8, #c084fc, #f43f5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 36px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 60px 8%;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .card h3 { font-size: 1.3rem; margin-bottom: 10px; color: #fff; }
+    .card p { color: var(--text-muted); font-size: 0.95rem; }
+    footer {
+      text-align: center;
+      padding: 40px 8%;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-glow"></div>
+  <nav>
+    <div class="logo">⚡ PxO AI Soft</div>
+    <div class="nav-links">
+      <a href="#services">Layanan</a>
+      <a href="#about">Tentang Kami</a>
+    </div>
+    <a href="https://pixeloffice-ai-softwarehouse.vercel.app" target="_blank" class="cta-btn">Buka HQ Cockpit 🚀</a>
+  </nav>
+
+  <header class="hero">
+    <div class="badge">🤖 10 AI Agents Autonomous Pipeline</div>
+    <h1>Membangun Perangkat Lunak Masa Depan Bersama <span>PxO AI Soft</span></h1>
+    <p class="subtitle">Software House revolusioner berbasis multi-agen AI cerdas yang mengotomatisasi seluruh siklus SDLC dari analisis kebutuhan hingga production deployment.</p>
+    <a href="https://pixeloffice-ai-softwarehouse.vercel.app" target="_blank" class="cta-btn" style="font-size: 1.1rem; padding: 14px 32px;">Mulai Proyek Sekarang ⚡</a>
+  </header>
+
+  <section class="services-grid" id="services">
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Product Architecture</h3>
+      <p>Perumusan PRD, arsitektur microservices, dan spesifikasi teknis lengkap yang dirancang presisi oleh AI Principal Architect.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎨</div>
+      <h3>Design System & UI/UX</h3>
+      <p>Antarmuka web modern dengan estetika pixel-art, glassmorphism, dan fluid micro-animations standar kelas dunia.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💻</div>
+      <h3>Fullstack Engineering</h3>
+      <p>Pengembangan frontend dan backend otonom dengan standar clean-code, scalable framework, dan validasi unit test otomatis.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛡️</div>
+      <h3>Security & QA Audit</h3>
+      <p>Audit keamanan OWASP, validasi AST engine, sanitasi XSS/CSRF, dan pengujian beban berkecepatan tinggi.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚀</div>
+      <h3>Instant Cloud Release</h3>
+      <p>Otomatisasi CI/CD terintegrasi langsung ke GitHub Repository dan Vercel Production Infrastructure secara real-time.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 PxO AI Soft (PixelOffice AI Software House). Dibangun dengan cinta untuk CEO @I-Shen.</p>
+  </footer>
+</body>
+</html>
